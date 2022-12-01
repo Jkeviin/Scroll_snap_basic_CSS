@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    overflow: auto; /* Con el auto lo que hace es que si el contenido es mas grande que el contenedor, se muestra un scroll */
+    scroll-snap-type: x mandatory; /* x mandatory es para que solo se pueda desplazar horizontalmente */
+    height: 500px;
+    width: 500px;
+}
+
+.container > .item {
+    min-width: 100%; /* Para que el ancho de cada item sea el 100% del contenedor */
+    scroll-snap-align: start; /* Para que cada item se alinee al inicio */
+}
+
+/* Cambar colores items */
+.item:nth-child(1) {
+    background-color: #f00;
+}
+
+.item:nth-child(2) {
+    background-color: #0f0;
+}
+
+.item:nth-child(3) {
+    background-color: #00f;
+}
+
+.item:nth-child(4) {
+    background-color: #ff0;
+}
+
+.item:nth-child(5) {
+    background-color: #0ff;
+}
+
+.item:nth-child(6) {
+    background-color: #f0f;
+}
+
+.item:nth-child(7) {
+    background-color: #000;
+}
+
